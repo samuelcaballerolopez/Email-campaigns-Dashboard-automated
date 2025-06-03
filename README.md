@@ -29,16 +29,17 @@ This project outlines the construction of a robust system for automated email ca
 
 ## 🛠️ Repository Structure
 
-All necessary code to replicate this project is included within this repository:
+All necessary code to replicate this project is included directly in the root of this repository:
 
 * **Python Scripts:**
-    * `brevo_client_1.py`: [Brief description of this script, e.g., "Extracts core campaign metrics from Brevo."]
-    * `brevo_client_2.py`: [Brief description of this script, e.g., "Processes raw data and calculates specific KPIs."]
-    * `brevo_client_3.py`: [Brief description of this script, e.g., "Handles authentication and writes data to Google Sheets."]
-   
+    This repository contains **three Python scripts**, each slightly modified from a common base to cater to the specific data requirements of different clients.
+    * `client_A_script.py`: [Brief description of what this client's script handles, e.g., "Extracts data for Client A, with specific KPI selection."]
+    * `client_B_script.py`: [Brief description of what this client's script handles, e.g., "Extracts data for Client B, with slight adjustments to data processing."]
+    * `client_C_script.py`: [Brief description of what this client's script handles, e.g., "Extracts data for Client C, focusing on specific campaign types."]
+    *(Please replace `client_A_script.py`, `client_B_script.py`, `client_C_script.py` with the actual names of your three Python files and add a brief description for each.)*
 * **Google Apps Script:**
     * `google_apps_script.gs`: Contains the complete Google Apps Script code used for data anonymization within Google Sheets.
-    
+    *(Please replace `google_apps_script.gs` with the actual name of your Apps Script file if it's different.)*
 * **GitHub Workflow:**
     * `.github/workflows/daily_brevo_update.yml`: Here you will find the configuration file for the GitHub Actions workflow that automates the daily execution of the Python scripts.
 
