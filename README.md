@@ -32,11 +32,11 @@ This project outlines the construction of a robust system for automated email ca
 All necessary code to replicate this project is included directly in the root of this repository:
 
 * **Python Scripts:**
-    This repository contains **three Python scripts**, each slightly modified from a common base to cater to the specific data requirements of different clients.
-    * `client_A_script.py`: [Brief description of what this client's script handles, e.g., "Extracts data for Client A, with specific KPI selection."]
-    * `client_B_script.py`: [Brief description of what this client's script handles, e.g., "Extracts data for Client B, with slight adjustments to data processing."]
-    * `client_C_script.py`: [Brief description of what this client's script handles, e.g., "Extracts data for Client C, focusing on specific campaign types."]
-    *(Please replace `client_A_script.py`, `client_B_script.py`, `client_C_script.py` with the actual names of your three Python files and add a brief description for each.)*
+    This repository contains **three Python scripts**, each slightly modified from a common base to cater to the specific API requirements of different Brevo clients.
+    * `brevo_client_1.py` 
+    * `brevo_client_2.py` 
+    * `brevo_client_3.py` 
+   
 * **Google Apps Script:**
     * `google_apps_script.gs`: Contains the complete Google Apps Script code used for data anonymization within Google Sheets.
     *(Please replace `google_apps_script.gs` with the actual name of your Apps Script file if it's different.)*
