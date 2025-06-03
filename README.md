@@ -38,8 +38,8 @@ All necessary code to replicate this project is included directly in the root of
     * `brevo_client_3.py` 
    
 * **Google Apps Script:**
-    * `google_apps_script.gs`: Contains the complete Google Apps Script code used for data anonymization within Google Sheets.
-    *(Please replace `google_apps_script.gs` with the actual name of your Apps Script file if it's different.)*
+    * `appsscript.js`: Contains the complete Google Apps Script code used for data anonymization within Google Sheets.
+   
 * **GitHub Workflow:**
     * `.github/workflows/daily_brevo_update.yml`: Here you will find the configuration file for the GitHub Actions workflow that automates the daily execution of the Python scripts.
 
