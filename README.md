@@ -85,5 +85,6 @@ Contributions are welcome! If you have suggestions, improvements, or find any bu
 
 ## 📧 Contact
 
-* Samuel Caballero Lopez - [Your GitHub Profile URL Here]
+* Samuel Caballero Lopez - https://github.com/samuelcaballerolopez
 * samuelcablop@gmail.com
+* www.linkedin.com/in/samuel-caballero-lópez-857b2715a
