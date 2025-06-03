@@ -31,8 +31,16 @@ This project outlines the construction of a robust system for automated email ca
 
 All necessary code to replicate this project is included within this repository:
 
-* **`python_scripts/`**: Contains the Python scripts responsible for extracting data from the Brevo API and sending it to Google Sheets.
-* **`.github/workflows/daily_brevo_update.yml`**: Here you will find the GitHub Actions workflow configuration file that automates the daily execution of the Python scripts.
+* **Python Scripts:**
+    * `brevo_client_1.py`: [Brief description of this script, e.g., "Extracts core campaign metrics from Brevo."]
+    * `brevo_client_2.py`: [Brief description of this script, e.g., "Processes raw data and calculates specific KPIs."]
+    * `brevo_client_3.py`: [Brief description of this script, e.g., "Handles authentication and writes data to Google Sheets."]
+   
+* **Google Apps Script:**
+    * `google_apps_script.gs`: Contains the complete Google Apps Script code used for data anonymization within Google Sheets.
+    
+* **GitHub Workflow:**
+    * `.github/workflows/daily_brevo_update.yml`: Here you will find the configuration file for the GitHub Actions workflow that automates the daily execution of the Python scripts.
 
 ---
 
@@ -43,7 +51,9 @@ For secure authentication with the Brevo API and Google Sheets, sensitive creden
 * **Location of GitHub Secrets:** You can find and manage these secrets in your repository settings:
     `Repository > Settings > Secrets and variables > Actions`
 
-    ![Screenshot of GitHub Secrets location](screenshots/screenshots/repository_secrets.png) ---
+    ![Screenshot of GitHub Secrets location](screenshots/screenshots/repository_secrets.png)
+
+---
 
 ## 📊 Data and Dashboards
 
@@ -76,5 +86,3 @@ Contributions are welcome! If you have suggestions, improvements, or find any bu
 
 * Samuel Caballero Lopez - [Your GitHub Profile URL Here]
 * samuelcablop@gmail.com
-
----
