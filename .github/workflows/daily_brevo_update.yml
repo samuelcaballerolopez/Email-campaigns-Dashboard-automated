@@ -1,0 +1,45 @@
+name: Daily Brevo Data Update
+
+# To ACTIVATE the schedule, you need to UNCOMMENT the lines below
+# (i.e., remove the '#' character from the beginning of the 'on:',
+# 'schedule:', and 'cron:' lines).
+# ---------------------------------------------------------------------
+
+#------- schedule -------
+#on:
+#  schedule:
+#    - cron: '30 04 * * *' # Run at 6:30 AM every day (UTC)
+#-------------------------
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3  # Action to download your code to the runner
+
+      - name: Set up Python
+        uses: actions/setup-python@v3  # Action to install Python
+        with:
+          python-version: '3.12.7' # Specify the Python version your script uses
+
+      - name: Install dependencies
+        run: pip install requests gspread pandas # Make sure to list all you need
+
+      - name: Run script Client 1
+        run: python brevo_client_1.py   #Replace with your Python file name
+        env:
+          API_KEY: ${{ secrets.BREVO_API_KEY_CLIENT_1 }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }} 
+          
+      - name: Run script Client 2
+        run: python brevo_client_2.py
+        env:
+          API_KEY: ${{ secrets.BREVO_API_KEY_CLIENT_2 }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }} 
+   
+      - name: Run script Client 3
+        run: python brevo_client_3.py
+        env:
+          API_KEY: ${{ secrets.BREVO_API_KEY_CLIENT_3 }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }} 
