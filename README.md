@@ -33,19 +33,19 @@ All necessary code to replicate this project is included directly in the root of
 
 * **Python Scripts:**
     This repository contains **three Python scripts**, each slightly modified from a common base to cater to the specific API requirements of different Brevo clients.
-    * `brevo_client_1.py` 
-    * `brevo_client_2.py` 
-    * `brevo_client_3.py` 
-   
+    * `brevo_client_1.py`
+    * `brevo_client_2.py`
+    * `brevo_client_3.py`
+
 * **Google Apps Script:**
     * `appsscript.js`: Contains the complete Google Apps Script code used for data anonymization within Google Sheets.
-   
+
 * **GitHub Workflow:**
     * `.github/workflows/daily_brevo_update.yml`: Here you will find the configuration file for the GitHub Actions workflow that automates the daily execution of the Python scripts.
 
 ---
 
-## 🔒 Managing Secrets
+## 🔒 Managing Secrets and Google Cloud Credentials
 
 For secure authentication with the Brevo API and Google Sheets, sensitive credentials (like API keys and service account keys) are stored as **GitHub Secrets**. These secrets are never exposed in the code or logs, ensuring your sensitive information remains secure.
 
@@ -53,6 +53,15 @@ For secure authentication with the Brevo API and Google Sheets, sensitive creden
     `Repository > Settings > Secrets and variables > Actions`
 
     ![Screenshot of GitHub Secrets location](screenshots/screenshots/repository_secrets.png)
+
+### **Connecting Google Cloud Service Account to Google Sheets**
+
+To enable Python scripts to interact with your Google Sheets, you must:
+
+1.  **Create a Google Cloud Service Account:** Generate a service account in your Google Cloud Project with the necessary permissions to access and modify Google Sheets.
+2.  **Download Service Account Credentials:** Obtain the JSON key file for this service account.
+3.  **Share Google Sheet with Service Account:** Share your target Google Sheet with the email address of the newly created service account (e.g., `your-service-account@your-project-id.iam.gserviceaccount.com`).
+4.  **Set up GitHub Secret for Credentials:** Convert the content of the downloaded JSON key file into a single-line string (removing all line breaks) and store it as a new GitHub Secret. For instance, name this secret `GOOGLE_SERVICE_ACCOUNT_CREDENTIALS`. This secret will then be securely accessed by the GitHub Actions workflow.
 
 ---
 
