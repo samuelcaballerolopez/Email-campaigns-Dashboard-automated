@@ -87,4 +87,4 @@ Contributions are welcome! If you have suggestions, improvements, or find any bu
 
 * Samuel Caballero Lopez - https://github.com/samuelcaballerolopez
 * samuelcablop@gmail.com
-* www.linkedin.com/in/samuel-caballero-lópez-857b2715a
+* www.linkedin.com/in/samuel-caballero-lopez
