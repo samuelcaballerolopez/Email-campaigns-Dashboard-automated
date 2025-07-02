@@ -61,7 +61,7 @@ To enable Python scripts to interact with your Google Sheets, you must:
 1.  **Create a Google Cloud Service Account:** Generate a service account in your Google Cloud Project with the necessary permissions to access and modify Google Sheets.
 2.  **Download Service Account Credentials:** Obtain the JSON key file for this service account.
 3.  **Share Google Sheet with Service Account:** Share your target Google Sheet with the email address of the newly created service account (e.g., `your-service-account@your-project-id.iam.gserviceaccount.com`).
-4.  **Set up GitHub Secret for Credentials:** Convert the content of the downloaded JSON key file into a single-line string (removing all line breaks) and store it as a new GitHub Secret. For instance, name this secret `GOOGLE_SERVICE_ACCOUNT_CREDENTIALS`. This secret will then be securely accessed by the GitHub Actions workflow.
+4.  **Set up GitHub Secret for Credentials:** Convert the content of the downloaded JSON key file into a single-line string (removing all line breaks) and store it as a new GitHub Secret. For instance, name this secret `GOOGLE_CREDENTIALS_JSON`. This secret will then be securely accessed by the GitHub Actions workflow.
 
 ---
 
